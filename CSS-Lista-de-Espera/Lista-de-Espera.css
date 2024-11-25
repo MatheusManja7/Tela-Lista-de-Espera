@@ -27,19 +27,19 @@ html, body {
 .b-LisEsp1{
     position: fixed;
     top: 20vh;
-    right: 88vw;
+    right: 91vw;
     z-index: 1;
 }
 
 .b-LisEsp1 img{
-    width: 80%;
+    width: 100%;
     height: auto;
 }
 
 .b-LisEsp2{
     position: fixed;
     top: 20vh;
-    left: 89vw;
+    left: 90vw;
     z-index: 1;
 }
 
@@ -60,13 +60,30 @@ html, body {
     height: auto;
 }
 
+
 .box-LisEsp-mat{
     width: 85%;
-    height: 700px;
+    height: 800px;
     background-color: #f8f5f6c3;
     z-index: 3;
     border-radius: 10px;
     overflow-y: auto;
+    bottom: 20px;
+    position: relative;
+}
+
+.box-LisEsp-mat::-webkit-scrollbar{
+    width: 12px;
+}
+
+.box-LisEsp-mat::-webkit-scrollbar-track{
+    background-color: rgb(192, 192, 192);
+    border-radius: 5px;
+}
+
+.box-LisEsp-mat::-webkit-scrollbar-thumb{
+    background-color: rgba(32, 54, 139, 1);
+    border-radius: 5px;
 }
 
 .box-LisEsp-mat h1{
@@ -131,16 +148,17 @@ form{
 }
 
 table {
-    width: 90%;
+    width: 95%;
     border-collapse: collapse;
     position: relative;
     top: 20px;
     z-index: 4;
+    left: 2%;
 }
 
 th, td {
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 th {
@@ -148,19 +166,18 @@ th {
     color: white;
 }
 
-/* Estilo do ícone de lupa */
+
 i {
     color: #000000;
     cursor: pointer;
-    margin-left: 50px;
 }
 
 tr:nth-child(odd) {
-    background-color: #ffffff; /* Cor para as linhas ímpares */
+    background-color: #ffffff; 
 }
 
 tr:nth-child(even) {
-    background-color: rgba(233, 233, 233, 1) /* Cor para as linhas pares */
+    background-color: rgba(233, 233, 233, 1) 
 }
 
 @media only screen and (max-width: 480px) {
