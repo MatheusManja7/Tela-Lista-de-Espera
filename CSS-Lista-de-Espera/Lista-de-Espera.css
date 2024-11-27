@@ -9,9 +9,8 @@
 
 
 html,
-body {
+.corpo-lisEsp {
     height: 100%;
-    /* Define altura de 100% */
     margin: 0;
     padding: 0;
 }
@@ -129,7 +128,7 @@ body {
 
 }
 
-table {
+.table-lisEsp{
     width: 96%;
     border-collapse: collapse;
     position: relative;
@@ -226,7 +225,7 @@ tr:nth-child(even) {
         width: 0px;
     }
 
-    table{
+    .table-lisEsp{
         left: 2%;
         top: 5%;
     }
@@ -259,7 +258,7 @@ tr:nth-child(even) {
         top: 91vh;
     }
 
-    table{
+    .table-lisEsp{
         top: 5%;
     }
 
@@ -291,7 +290,7 @@ tr:nth-child(even) {
         left: 10%;
     }
 
-    table{
+    .table-lisEsp{
         top: 60px;
     }
 
