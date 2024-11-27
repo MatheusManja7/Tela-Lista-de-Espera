@@ -74,20 +74,6 @@ body {
     position: relative;
 }
 
-.box-LisEsp-mat::-webkit-scrollbar {
-    width: 12px;
-}
-
-.box-LisEsp-mat::-webkit-scrollbar-track {
-    background-color: rgb(192, 192, 192);
-    border-radius: 5px;
-}
-
-.box-LisEsp-mat::-webkit-scrollbar-thumb {
-    background-color: rgba(32, 54, 139, 1);
-    border-radius: 5px;
-}
-
 .box-LisEsp-mat h1 {
     margin-left: 40%;
     font-size: 30px;
@@ -96,13 +82,15 @@ body {
 }
 
 .area-pesquisa-lisEsp {
-    width: 100%;
+    width: 60%;
     height: 100px;
     background-color: rgba(0, 0, 255, 0);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    position: relative;
+    left: 20%;
 }
 
 .area-pesquisa-lisEsp input {
@@ -128,14 +116,6 @@ body {
     cursor: pointer;
     margin-left: 20px;
     font-weight: 600;
-}
-
-form {
-    background-color: rgba(137, 43, 226, 0);
-    width: 60%;
-    height: 70px;
-    display: flex;
-    align-items: center;
 }
 
 .area-table-lisEsp {
@@ -183,15 +163,20 @@ tr:nth-child(even) {
     background-color: rgba(233, 233, 233, 1)
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
     .area-LisEsp-principal {
         height: 650px;
     }
 
+    .area-LisEsp-principal{
+        background-color: rgba(0, 255, 255, 0);
+        height: 90%;
+    }
+
     .box-LisEsp-mat {
-        width: 95%;
+        width: 97%;
         height: auto;
-        top: 30px;
+        top: 20px;
         height: 650px;
     }
 
@@ -204,11 +189,11 @@ tr:nth-child(even) {
     }
 
     .b-LisEsp3 {
-        top: 93vh;
+        top: 94vh;
     }
 
     .area-pesquisa-lisEsp input {
-        width: 80%;
+        width: 60%;
         padding: 8px;
     }
 
@@ -217,6 +202,7 @@ tr:nth-child(even) {
         top: 20px;
         position: relative;
         background-color: rgba(0, 255, 255, 0);
+        left: 0%;
     }
 
     .area-pesquisa-lisEsp button {
@@ -237,15 +223,71 @@ tr:nth-child(even) {
     }
 
     .box-LisEsp-mat::-webkit-scrollbar {
-        width: 6px;
-    }
-
-    form {
-        background-color: #00000000;
-        width: 90%;
+        width: 0px;
     }
 
     table{
-        width: ;
+        left: 2%;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .area-LisEsp-principal{
+        height: 100%;
+    }
+
+    .box-LisEsp-mat{
+        width: 98%;
+        height: 850px;
+        bottom: 50px;
+    }
+
+    .box-LisEsp-mat h1{
+        margin-left: 29%;
+        top: 20px;
+        font-size: 35px;
+    }
+
+    .area-pesquisa-lisEsp{
+        width: 80%;
+        left: 10%;
+        top: 14px;
+    }
+
+    .b-LisEsp3{
+        top: 91vh;
+    }
+
+}
+
+@media screen and (min-height: 1366px){
+    .area-LisEsp-principal{
+        height: 100%;
+    }
+
+    .box-LisEsp-mat{
+        width: 95%;
+        height: 70%;
+    }
+    
+    .b-LisEsp3{
+        top: 90vh;
+    }
+
+    .box-LisEsp-mat h1{
+        font-size: 40px;
+        margin-left: 30%;
+        top: 30px;
+    }
+
+    .area-pesquisa-lisEsp{
+        width: 80%;
+        top: 35px;
+        left: 10%;
+    }
+
+    table{
+        top: 60px;
+    }
+
 }
