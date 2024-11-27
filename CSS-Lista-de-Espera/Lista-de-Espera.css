@@ -143,11 +143,19 @@ td {
     text-align: center;
 }
 
+tr{
+    cursor: pointer;
+}
+
 th {
     background-color: rgba(32, 54, 139, 1);
     color: white;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 i {
     color: #000000;
